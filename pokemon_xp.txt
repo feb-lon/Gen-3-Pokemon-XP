@@ -1,4 +1,5 @@
-switch(mon) {case "Bulbasaur": response = 64; break;
+switch(mon) {
+case "Bulbasaur": response = 64; break;
 case "Ivysaur": response = 141; break;
 case "Venusaur": response = 208; break;
 case "Charmander": response = 65; break;
@@ -385,7 +386,7 @@ case "Rayquaza": response = 220; break;
 case "Jirachi": response = 215; break;
 case "Deoxys": response = 215; break;
 
-default: response = "Unknown Pokémon";
+default: response = "Unknown Pokemon";
 }
 
 response
