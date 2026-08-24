@@ -389,14 +389,4 @@ case "Deoxys": base_xp = 215; break;
 default: response = "Unknown Pokemon";
 }
 
-level = Number(level)
-
-if (base_xp !== undefined") {
-if (typeof level === "number" && (level >= 1 && level <= 100)) {
-  response = "Trainer: " + Math.floor(Math.floor(base_xp*level/7)*1.5) + " XP, Wild: " + Math.floor(base_xp*level/7) + " XP"
-} else {
-  response = mon + " has Base XP of " + base_xp + ". Type the level after the Pokemon to get XP for a certain Level."
-}
-}
-
 response
