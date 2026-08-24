@@ -1,4 +1,4 @@
-switch(mon, level = 7) {
+switch(mon) {
 case "Bulbasaur": base_xp = "64"; break;
 case "Ivysaur": base_xp = "141"; break;
 case "Venusaur": base_xp = "208"; break;
@@ -387,13 +387,14 @@ case "Jirachi": base_xp = "215"; break;
 case "Deoxys": base_xp = "215"; break;
 
 default: response = "Unknown Pokemon";
+}
 
+if (response != "Unknown Pokemon") {
 if typeof level == number && (level >= 1 && level <= 100) {
   response = "Trainer: " + Math.floor(Math.floor(base_xp*level/7)*1.5) + " XP, Wild: " + Math.floor(base_xp*level/7) + " XP"
-} else if (response != "Unknown Pokemon") {
+} else {
   response = mon + " has Base XP of " + base_xp ". Type the level after the Pokemon to get XP for a certain Level."
 }
-
 }
 
-return response
+response
