@@ -1,4 +1,4 @@
-switch(mon, level = 7) {
+switch(mon, level) {
 case "Bulbasaur": base_xp = "64"; break;
 case "Ivysaur": base_xp = "141"; break;
 case "Venusaur": base_xp = "208"; break;
@@ -393,8 +393,6 @@ if typeof level == number && (level >= 1 && level <= 100) {
 } else if (response != "Unknown Pokemon") {
   response = mon + ' has Base XP of ' base_xp '. Type the level after the Pokemon to get XP for a certain Level.'
 }
-
-
 }
 
 response
