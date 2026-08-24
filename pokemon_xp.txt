@@ -81,6 +81,7 @@ case "slowpoke": response = 99; break;
 case "slowbro": response = 164; break;
 case "magnemite": response = 89; break;
 case "magneton": response = 161; break;
+case "farfetchd": ;
 case "farfetch'd": response = 94; break;
 case "doduo": response = 96; break;
 case "dodrio": response = 158; break;
